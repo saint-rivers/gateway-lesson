@@ -1,0 +1,10 @@
+POST http://localhost:8001/services/product-service/routes
+Content-Type: application/x-www-form-urlencoded
+
+paths[]=/api/v1&name=product-route
+
+### RESET
+DELETE http://localhost:8001/services/product-service/routes/product-route
+
+###
+GET http://localhost:8000/api/v1/products

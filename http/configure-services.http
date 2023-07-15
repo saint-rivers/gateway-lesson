@@ -1,0 +1,16 @@
+POST http://localhost:8001/services
+Content-Type: application/x-www-form-urlencoded
+
+url=http://invoice-service:8080&name=invoice-service
+
+### 
+DELETE http://localhost:8001/services/invoice-service
+
+###
+POST http://localhost:8001/services
+Content-Type: application/x-www-form-urlencoded
+
+url=http://product-service:8080&name=product-service
+
+### 
+DELETE http://localhost:8001/services/product-service
